@@ -1,0 +1,10 @@
+<div class="d-flex flex-wrap justify-content-center align-items-center">
+    <% @events.reverse_each do |event| %>
+    <div class="w-50 p-5 rounded-3 m-3 blur">
+        <h2><%= event.title %></h2>
+        <p><%= event.description %></p>
+        <p><%= event.price %>€</p>
+        <%= link_to "Voir plus" ,event_path(event.id), :class => "btn btn-outline-light" %>
+    </div>
+    <% end %>
+</div>
