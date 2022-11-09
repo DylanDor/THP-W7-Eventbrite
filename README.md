@@ -1,1 +1,1 @@
-w7eventbrite.fly.dev
+https://w7eventbrite.fly.dev
