@@ -4,7 +4,7 @@
         <h2><%= event.title %></h2>
         <p><%= event.description %></p>
         <p><%= event.price %>€</p>
-        <%= link_to "Voir plus" ,event_path(event.id), :class => "btn btn-outline-light" %>
+        <%= link_to "Voir plus" ,event_path(event.id), class: "btn btn-dark" %>
     </div>
     <% end %>
 </div>
