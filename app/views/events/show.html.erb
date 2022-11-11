@@ -5,3 +5,4 @@
 <h3><%= @event.start_date %></h3>
 <h3><%= @event.duration %> minutes</h3>
 <h3><%= @event.admin.first_name %></h3>
+<%= button_to "Passer commande", checkout_create_path(total: @event.price), class: "btn btn-primary", remote: true %>
