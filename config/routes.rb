@@ -16,8 +16,8 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
+    resources :events
     resources :users
     root 'admin#index'
-    resources :admin
   end
 end

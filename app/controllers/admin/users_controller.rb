@@ -12,7 +12,7 @@ class Admin::UsersController < ApplicationController
 
   # GET /admin/users/new
   def new
-    @admin_user = Admin::User.new
+    @admin_user = User.new
   end
 
   # GET /admin/users/1/edit
@@ -21,7 +21,7 @@ class Admin::UsersController < ApplicationController
 
   # POST /admin/users or /admin/users.json
   def create
-    @admin_user = Admin::User.new(admin_user_params)
+    @admin_user = User.new(admin_user_params)
 
     respond_to do |format|
       if @admin_user.save

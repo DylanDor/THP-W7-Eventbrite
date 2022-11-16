@@ -1,0 +1,29 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Events</h1>
+
+<div id="admin_events">
+  <% @admin_events.each do |admin_event| %>
+    <%= render admin_event %>
+    <p>
+      <%= admin_event.title %>
+      <%= admin_event.validated %>
+      <%= link_to "Show this event", admin_event_path(admin_event.id) %>
+    </p>
+  <% end %>
+</div>
+
+<h2>Validation</h2>
+
+<div id="admin_events">
+  <% @not_validated_events.each do |admin_event| %>
+    <%= render admin_event %>
+    <p>
+      <%= admin_event.title %>
+      <%= admin_event.validated %>
+      <%= link_to "Show this event", admin_event_path(admin_event.id) %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New event", new_admin_event_path %>

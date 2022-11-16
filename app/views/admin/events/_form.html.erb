@@ -1,0 +1,11 @@
+<%= form_with url: admin_events_path, method: :post do |form| %>
+
+  <div class="m-3 ">
+      <label>Validé ?</label>
+      <%= form.check_box :validated%>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
